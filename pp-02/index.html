@@ -11,17 +11,19 @@
     <h1><a href="http://example.com/index.html" rel="home">HTML Antipatterns</a></h1>
     <nav id="navigation">
       <!--Hint: Match navigation labels with memorable paths/URLs-->
-      <li><a href="home.html">Home</a></li>
-      <li><a href="../my-res/">Resume</a></li>
-      <li><a href="../randomstuff/">Interests</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/resume/">Resume</a></li>
+      <li><a href="/interests/">Interests</a></li>
     </nav>
   </header>
   <!--Hint: Watch for duplicate and non-semantic classes and IDs-->
   <main id="home">
-    <article id="primary" class="green-background">
+    <article id="primary">
       <h2>About Me</h2>
-      <h3>3rd-Year ITM Undergraduate</h3>
-      <h4>Majoring in Cybersecurity</h4>
+      <ul id="about-me-summary">
+        <li>3rd-Year ITM Undergraduate</li>
+        <li>Majoring in Cybersecurity</li>
+      </ul>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper risus eget magna
         suscipit, in blandit mauris aliquam. Donec ac elementum libero. Maecenas sit amet leo
