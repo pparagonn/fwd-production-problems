@@ -11,9 +11,11 @@
     <h1><a href="http://example.com/index.html" rel="home">HTML Antipatterns</a></h1>
     <nav id="navigation">
       <!--Hint: Match navigation labels with memorable paths/URLs-->
-      <li><a href="/">Home</a></li>
-      <li><a href="/resume/">Resume</a></li>
-      <li><a href="/interests/">Interests</a></li>
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/resume/">Resume</a></li>
+        <li><a href="/interests/">Interests</a></li>
+      </ol>
     </nav>
   </header>
   <!--Hint: Watch for duplicate and non-semantic classes and IDs-->
@@ -35,7 +37,8 @@
     <article id="my dog"
       <div class="header">Look at this awesome dog!</div>
         <figure>
-          <img href="file:///Users/scarlethawk/Desktop/Photo%20Saves/Hank.JPEG" alt="Photo of Hank" />
+          <img href="file:///Users/scarlethawk/Desktop/Photo%20Saves/Hank.JPEG" alt="Photo of Hank"
+          />
             <figcaption>
               Hank hanging out on the couch & being chill.
               </figcaption>
