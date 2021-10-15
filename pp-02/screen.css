@@ -19,3 +19,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 h1, h2, h3, p, section, ul, ol, figure {
   padding-bottom: 14px;
 }
+
+h1 {
+  font-size: 34.375px;
+  line-height: 42px; /* 28px * 1.5 = 42 */
+}
+
+h2 {
+  font-size:27.5px;
+  font-weight: bold;
+}
