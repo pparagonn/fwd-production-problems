@@ -16,6 +16,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     https://www.modularscale.com/?22&px&1.25
 */
 
+html {
+  font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+  font-size: 22px; /* 22 / 16 = 1.375 */
+  line-height: 28px;
+  padding: 14px;
+}
+
 h1, h2, h3, p, section, ul, ol, figure {
   padding-bottom: 14px;
 }
