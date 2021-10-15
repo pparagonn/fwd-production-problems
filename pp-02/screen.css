@@ -10,15 +10,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*
   TYPOGRAPHIC GRID PROPERTIES:
-  Base font-size: 22px
+  Base font-size: 23px
   Base line-height: 28px
-  Modular scale: 1.25
-    https://www.modularscale.com/?22&px&1.25
+  Modular scale: 1.2
+    https://www.modularscale.com/?23&px&1.2
 */
 
 html {
   font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
-  font-size: 22px; /* 22 / 16 = 1.375 */
+  font-size: 23px; /* 22 / 16 = 1.125 */
   line-height: 28px;
   padding: 14px;
 }
@@ -28,11 +28,39 @@ h1, h2, h3, p, section, ul, ol, figure {
 }
 
 h1 {
-  font-size: 34.375px;
+  font-size: 39.744px;
   line-height: 42px; /* 28px * 1.5 = 42 */
 }
 
 h2 {
-  font-size:27.5px;
+  font-size:33.12;
   font-weight: bold;
+}
+/**
+* A quick baseline grid overlay using css+svg.
+* Inspired by [Basehold.it](https://basehold.it/).
+* @author leshido
+*/
+
+body {
+    position: relative;
+}
+
+body::after {
+    /* Change the `height` parameter here to match your base line-height. */
+    background: url('data:image/svg+xml;utf8,<svg height="14" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+
+    content: "";
+    display: block;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+}
+
+body:active::after {
+    display: none;
 }
