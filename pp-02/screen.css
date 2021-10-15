@@ -15,3 +15,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   Modular scale: 1.25
     https://www.modularscale.com/?22&px&1.25
 */
+
+h1, h2, h3, p, section, ul, ol, figure {
+  padding-bottom: 14px;
+}
