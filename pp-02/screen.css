@@ -7,3 +7,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+/*
+  TYPOGRAPHIC GRID PROPERTIES:
+  Base font-size: 22px
+  Base line-height: 28px
+  Modular scale: 1.25
+    https://www.modularscale.com/?22&px&1.25
+*/
