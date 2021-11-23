@@ -43,3 +43,18 @@ console.log('The value of x is', x, '-- it should be 5.');
   so that non-number values passed into the function are handled
   in some reasonable way.
 */
+
+let x = 5;
+
+let double = function(num) {
+  let forcedNum = num;
+  if(isNaN(forcedNum) || typeof(forcedNum) !== 'number') {
+    console.log('Please input a numerical input for the double.')
+    return;
+  }
+  let x = forcedNum * 2;
+  return x;
+}
+
+double(6);
+console.log('The value of x is', x, '-- it should be 5.');
