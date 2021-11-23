@@ -4,15 +4,15 @@
   `x` as the variable inside the function, however.
 */
 
-x = 5;
+// var x = 5;
+//
+//function double(num) {
+//  var x = num * 2;
+//  return x;
+//}
 
-function double(num) {
-  x = num * 2;
-  return x;
-}
-
-double(2.5);
-console.log('The value of x is', x, '-- it should be 5.');
+//double(6);
+//console.log('The value of x is', x, '-- it should be 5.');
 
 /*
   Step 2. Rewrite the JavaScript `double()` function above so that
